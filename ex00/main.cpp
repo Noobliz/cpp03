@@ -6,17 +6,11 @@ int main()
     ClapTrap georges(bob);
     ClapTrap ernest("ernest");
     ClapTrap lol("lol");
-    lol = ernest;
 
-    bob.attack("nothing");
-    bob.attack("nothing");
-    bob.attack("nothing");
-    bob.attack("nothing");
-    bob.attack("nothing");
-    bob.attack("nothing");
-    bob.attack("nothing");
-    bob.attack("nothing");
-    //bob.attack("nothing");
+    for (int i = 0; i < 9; i++)
+        bob.attack("nothing");
+
+    lol = bob;
     lol.attack("void");
     bob.takeDamage(5);
     bob.beRepaired(3);

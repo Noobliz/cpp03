@@ -4,7 +4,7 @@
 ClapTrap::ClapTrap(const std::string &name) 
     : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(10)
 {
-    std::cout<<"ClapTrap "<<_name<<" is created with default constructor"<<std::endl;
+    std::cout<<"ClapTrap "<<_name<<" is created!"<<std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &other)
