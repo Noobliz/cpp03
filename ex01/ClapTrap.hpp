@@ -5,15 +5,14 @@
 
 class   ClapTrap
 {
-    private:
-        ClapTrap();
     protected: //so babies can access
-        std::string _name;
-        int _hitPoints;
-        int _energyPoints;
-        int _attackDamage;
+    std::string _name;
+    int _hitPoints;
+    int _energyPoints;
+    int _attackDamage;
     
     public:
+        ClapTrap();
         ClapTrap(const std::string &name);
         ClapTrap(const ClapTrap &other);
         ClapTrap &operator=(const ClapTrap &other);
